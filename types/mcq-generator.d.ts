@@ -1,0 +1,1 @@
+declare module "@/lib/mcq-generator" {\n  interface MCQ {\n    question: string;\n    options: string[];\n    correctAnswer: string;\n  }\n  \n  export function generateMCQs(prompt: string): Promise<MCQ[]>;\n}
